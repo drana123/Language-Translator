@@ -1,0 +1,23 @@
+<% include partials/header%>
+
+
+
+<div class="ui main text container segment">
+
+      <h5> The given Image is : <h5>
+    <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">
+
+    <br><br><br>
+
+     <h5><b>The Extracted text is as follows:</b> <h5>
+     <p><%=extract%> </p>
+     <br><br>
+
+     <h5><b> The translated text is as follows:</b> <h5>
+     <p><%= text%></p>
+
+
+</div>
+
+
+<% include partials/footer %>
